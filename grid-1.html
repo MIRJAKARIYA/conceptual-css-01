@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .grid-container{
+            border: 2px solid red;
+            padding: 5px;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(10,1fr);
+            /* grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); */
+            grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "n n n t t t t t t t t t"
+            "n n n a a a b b b c c c"
+            "n n n a a a b b b c c c"
+            "n n n a a a b b b c c c"
+            "n n n a a a b b b c c c"
+            "n n n a a a b b b c c c"
+            "n n n a a a b b b c c c"
+            "n n n a a a b b b c c c"
+            "d d d d d d d d d d d d";
+        
+       
+        }
+        .grid-item{
+            font-size: 25px;
+        }
+        .one{
+            background-color: red;
+            grid-area: h;
+   
+        }
+        .two{
+            background-color: deeppink;
+            grid-area: n;
+           
+        }
+        .three{
+            background-color: blue;
+            grid-area: t;
+        }
+        .four{
+            background-color: blueviolet;
+            grid-area: a;
+        }
+        .five{
+            background-color: green;
+            grid-area: b;
+        }
+        .six{
+            background-color: aqua;
+            grid-area: c;
+        }
+        .seven{
+            background-color: thistle;
+            grid-area: d;
+        }
+        /* .eight{
+            background-color: mediumspringgreen;
+            grid-column: 1/-1;
+
+        }
+        .nine{
+            background-color: orange;
+            grid-column: 1/span 2;
+        }
+        .ten{
+            background-color: slategray;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+         <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+        <div class="grid-item six">6</div>
+        <div class="grid-item seven">7</div> 
+        <!-- <div class="grid-item eight">8</div>
+        <div class="grid-item nine">9</div>
+        <div class="grid-item ten">10</div>   -->
+    </div>
+</body>
+</html>
